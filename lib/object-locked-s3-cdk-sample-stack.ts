@@ -16,6 +16,9 @@ export class ObjectLockedS3CdkSampleStack extends cdk.Stack {
           }
         ]
       },
+      versioningConfiguration: {
+        status: "Enabled"
+      },
       objectLockEnabled: true,
       objectLockConfiguration: {
         objectLockEnabled: "Enabled",
